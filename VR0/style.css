@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    max-width: 400px;
+}
+
+.div-direita p {
+    color: aqua;
+}
+
+.div-esquerda p {
+    color: rgb(107, 109, 109);
+}

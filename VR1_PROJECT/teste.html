@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<title>Exemplo lista com li:not(:last-child)</title>
+<style>
+  /* Estilo para toda a lista */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+  }
+
+  /* Estilo para cada item de lista */
+  li {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  /* Aplicar uma margem inferior apenas nos itens que NÃO são o último */
+  li:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: 2px dashed red;
+  }
+
+</style>
+</head>
+<body>
+
+<h2>Lista de exemplos</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+</body>
+</html>

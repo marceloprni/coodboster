@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    max-width: 400px;
+}
+
+a {
+    color: #3b9f27;
+    text-decoration: none;
+}
+
+.div-direita p {
+    color: aqua;
+}
+
+.div-esquerda p {
+    color: rgb(107, 109, 109);
+}
+
+section h1 {
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo_principal {
+    text-align: center;
+    color: #92338a;
+    font-size: 30px;
+
+}
+
+
+.btn_conf {
+    background-color: violet;
+    color: white;
+    width: 120px;
+    height: 60px;
+}
+
+/* erda os dados do btn_conf */
+.btn_conf.btn_cadastrar {
+    background-color: greenyellow;
+}
+
+.btn_conf:hover {
+    border-color: beige;
+}
+
+input {
+    outline: none;
+}
+
+
+input:focus {
+    border: 2px solid rgb(194, 49, 49);
+}
+
+ul li:first-child {
+    color: #3b9f27;
+}
+
+ul li:last-child {
+    color: #a32525;
+}
+
+ul li:nth-child(2) {
+    color: aquamarine;
+}
