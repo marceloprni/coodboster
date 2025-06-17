@@ -1,0 +1,6 @@
+media 1200px
+media 991px
+media 600px
+media 480px 
+
+no scss você deixa um arquivo só sem _ pois o scss vai compilar todos os arquivo importado dentro dele e um arquivo só scss
