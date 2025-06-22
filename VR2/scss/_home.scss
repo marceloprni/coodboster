@@ -1,3 +1,78 @@
 body {
-    background-color: aqua;
+    background-color: $main-color;
 }
+
+.s-hero {
+    width: 100%;
+    height: 800px;
+    background-color: $second-color;
+
+    .text {
+        h1 {
+            color: $terceira-color;
+        }
+
+        p {
+            color: $quarta-color;
+        }
+    }
+
+    .image {
+        background-color: bisque;
+    }
+
+    .btn {
+        background-color: blueviolet;
+        border: none;
+        padding: 20px 30px;
+        font-size: 22px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(163, 163, 196);
+        }
+    }
+
+    /* tudo que estiver dentro de & ira juntar com button como button.btn*/
+    button {
+        &.btn2 {
+            background-color: sandybrown;
+            border: none;
+            padding: 20px 30px;
+            font-size: 22px;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+
+    @include responsive(800px) {
+        .text {
+            display: flex;
+            flex-direction: row;
+            p {
+                color: red;
+            }
+        }
+    }
+}
+
+.first-section {
+    .btn3 {
+        @include style-btn;
+    }
+}
+
+.second-section {
+    .btn4 {
+        @include style-btn;
+    }
+}
+
+.third-section {
+    .btn5 {
+        @include style-btn2(100px, 50px, blue);
+    }
+}
+
+

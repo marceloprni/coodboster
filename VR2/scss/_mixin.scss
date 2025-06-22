@@ -1,0 +1,35 @@
+@mixin flex-element($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+@mixin style-btn {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(116, 26, 41);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+@mixin style-btn2($largura, $altura, $cor) {
+    width: $largura;
+    height: $altura;
+    background-color: rgb(116, 26, 41);
+    color: $cor;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+    @include flex-element(center, center, row);
+}
+
+@mixin responsive($sreenWidth) {
+    @media(max-width: $sreenWidth) {
+        @content;
+    }
+}
+

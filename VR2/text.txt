@@ -3,37 +3,39 @@ media 991px
 media 600px
 media 480px 
 
+configurar instalar 
+Live Sass Compiler
 
-E1J02_Z_ERR
-E1J02_F_ABRIR
-E1J02_F_FECHAR
-E1J02_Falhas
-E1J02_Falhas
-E1J02_Falhas
+configuração 
 
-E1J03_Z_ERR
-E1J03_F_ABRIR
-E1J03_F_FECHAR
-E1J03_Falhas
-E1J03_Falhas
-E1J03_Falhas
+Extension - Live Sass Compiler - "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ]
 
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
-E1J01_3_Falhas
+sempre colocar _home o arderlane na frente o scss entende que não e pra ser compilado só o arquivo sem o arderlane.
 
-E1J01_3_EM
-E1J01_3_SC
-E1J01_3_SLA_C
-E1J01_3_SLA_O
-E1J01_3_SSL
-E1J01_3_XAH1
-E1J01_3_XAH2
-E1J01_3_XAH3
-E1J01_3_XAH4
+@mixin style-button {
+    width: 75px;
+    padding: 0 15px;
+}
+
+button {
+    @include style-button;
+}
+
+// MIXIN COM VARIAVEL
+
+@mixin style-button($largura, $altura, $bg) {
+    width: $largura;
+    height: $altura
+    color: $bg;
+    padding: 0 15px;
+}
+
+button {
+    @include style-button(100px, 50px, red);
+}
