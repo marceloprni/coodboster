@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../scss/_variables.scss","../scss/_reset.scss","../scss/_grid.scss"],"names":[],"mappings":"AAAQ,gFACA,0ICDR,EACI,SACA,UACA,sBACA,YACA,aACA,gBACA,qBACA,8BAGJ,KACI,gBCZJ,WACI,WACA,mBACA,iBACA","file":"main.min.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/_home.scss","../scss/_buttons.scss","../scss/_responsive.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UCFJ,KACI,yBCDJ,QACI,cCDJ,yBACI,GACI","file":"main.min.css"}
+>>>>>>> 92a8b9306be41cc3a396f2ee3b57e95d9f08b269

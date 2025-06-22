@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/_home.scss","../scss/_variables.scss","../scss/_mixin.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UCFJ,KACI,iBCDS,KDIb,QACI,WACA,aACA,iBCNW,KDSP,iBACI,MCTK,IDYT,gBACI,MCZG,MDgBX,eACI,wBAGJ,aACI,yBACA,YACA,kBACA,eACA,WACA,kBACA,eACA,mBACI,yBAMJ,oBACI,yBACA,YACA,kBACA,eACA,WACA,kBEdR,yBFmBI,cACI,aACA,mBACA,gBACI,WAOZ,qBEnDA,YACA,aACA,yBACA,WACA,iBACA,eACA,kBFmDA,sBEzDA,YACA,aACA,yBACA,WACA,iBACA,eACA,kBFyDA,qBErDA,MFsDwB,MErDxB,OFqD+B,KEpD/B,yBACA,MFmDqC,KElDrC,iBACA,eACA,kBAxBA,aACA,YAwBsB,OAvBtB,gBAuB8B,OAtB9B,eAsBsC","file":"main.min.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/_home.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UCFJ,KACI","file":"main.min.css"}
+>>>>>>> 92a8b9306be41cc3a396f2ee3b57e95d9f08b269
