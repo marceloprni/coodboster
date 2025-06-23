@@ -3,3 +3,29 @@
         @content;
     }
 }
+
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin style-btn($heigh, $bg, $colorText) {
+    display: inline-block;
+    height: $heigh;
+    line-height: $heigh;
+    background-color: $bg;
+    color: $color;
+    border-radius: 6rem;
+    padding: 0px 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-replace: all .3s;
+
+    &:hover {
+        background-color:  $colorText;
+        color: $bg;
+    }
+}
