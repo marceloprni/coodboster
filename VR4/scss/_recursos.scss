@@ -1,0 +1,94 @@
+
+
+.s-recursos {
+  padding-top: 6.9375rem;
+  padding-bottom: 7.0625rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .intro-recursos {
+    @include flexCenterJustify;
+    padding-bottom: 5rem;
+    h3 {
+      max-width: 41.25rem;
+      color: $gray-100;
+      font-weight: 700;
+      line-height: 120%; /* 48px */
+      letter-spacing: -1.2px;
+    }
+
+    p {
+      color: $gray-200;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+  }
+
+  ul {
+    @include flexCenterJustify;
+  }
+
+  @include responsivo("laptop") {
+    padding-top: 5rem;
+
+    .recursos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+
+      .card-recurso {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @include responsivo("tablet") {
+    padding-bottom: 5rem;
+    .intro-recursos {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .recursos {
+      .card-recurso {
+        .icon {
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+        .text {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include responsivo("mobile") {
+    padding-bottom: 5rem;
+    .intro-recursos {
+      gap: 1rem;
+
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .recursos {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      .card-recurso {
+        .icon {
+          margin: 0 auto;
+          margin-bottom: 1rem;
+        }
+        .text {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

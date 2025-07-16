@@ -1,0 +1,57 @@
+.s-marketing {
+  padding-top: 96px;
+  padding-bottom: 126px;
+
+  .box {
+    width: 100%;
+    height: 28.75rem;
+    background: url(../img/bg-marketing.png) no-repeat center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+    h2 {
+      text-align: center;
+      font-size: 3.5rem;
+      max-width: 49.125rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $gray-200;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%; /* 30px */
+      width: 31.25rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include responsivo("tablet") {
+    .box {
+      padding: 0 1.25rem;
+    }
+  }
+
+  @include responsivo("mobile") {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .box {
+      padding: 3rem 0px;
+      height: auto;
+      background-size: cover;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+        width: 20rem;
+      }
+    }
+  }
+}

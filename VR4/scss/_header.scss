@@ -1,0 +1,57 @@
+header {
+  margin-top: 1rem;
+  position: sticky;
+  z-index: 2000;
+  top: 1rem;
+  .content-header {
+    @include flexCenterJustify;
+    border-radius: 6.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(3.5px);
+    padding: 0.8rem 0.8rem 0.8rem 2.1rem;
+
+    .actions-right {
+      @include flex-center;
+      gap: 1rem;
+
+      .ajuda {
+        @include flex-center;
+        gap: 0.5rem;
+
+        a {
+          color: $gray-200;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 150%;
+          transition: 0.3s ease;
+          &:hover {
+            color: $purple-10;
+          }
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  @include responsivo("mobile") {
+    .content-header {
+      padding: 0.8rem 0.8rem 0.8rem 2.1rem;
+
+      .logo {
+        max-width: 8.4375rem;
+      }
+
+      .actions-right {
+        display: none;
+      }
+
+      .hidden {
+        display: block;
+      }
+    }
+  }
+}
