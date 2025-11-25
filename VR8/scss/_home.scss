@@ -1,0 +1,230 @@
+
+
+.s-area-slide-hero {
+  position: relative;
+  width: 100%;
+  height: 99.4rem;
+
+  .slide-hero {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .swiper-slide {
+      &.blue {
+        .main-area {
+          background: url('../img/bg-blue.svg') no-repeat center center;
+
+          .text {
+            .image {
+              .pokeball {
+                position: relative;
+                top: -6.5rem;
+                left: 1.3rem;
+              }
+            }
+          }
+
+          .area-explore {
+            .txt {
+              .icon {
+                background: $opacity-900;
+              }
+            }
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 28.8rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $white-200;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .main-area {
+        position: relative;
+        background: url('../img/bg-red.svg') no-repeat center center;
+        width: 100%;
+        height: 70.6rem;
+        background-size: cover;
+        padding-top: 13.3rem;
+
+        .container {
+          position: relative;
+          height: 100%;
+        }
+
+        .text {
+          .tag {
+            margin: 0 auto;
+          }
+
+          h1 {
+            text-align: center;
+            margin-top: 2.9rem;
+            margin-bottom: .8rem;
+          }
+
+          p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $white;
+          }
+
+          .image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 79.8rem;
+            margin: 0 auto;
+            margin-top: 12.2rem;
+            animation: float 6s ease-in-out infinite;
+
+            .lights {
+              position: absolute;
+              top: -4.9rem;
+              left: 50%;
+              margin-left: -8.5rem;
+            }
+          }
+        }
+
+        .area-explore {
+          position: absolute;
+          bottom: 8rem;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+          @include flex(row, flex-end, space-between);
+
+          .txt {
+            position: relative;
+            top: -3.9rem;
+            left: -2.4rem;
+            @include flex(row, center, flex-start);
+            transform: rotate(-90deg);
+
+            .icon {
+              width: 4rem;
+              height: 4rem;
+              background: $red-200;
+              border-radius: 50%;
+              @include centerTotalFlex();
+              transform: rotate(90deg);
+            }
+
+            span {
+              font-weight: 500;
+              font-size: 1.3rem;
+              line-height: 150%;
+              color: $white;
+              margin-left: 3rem;
+            }
+          }
+
+          .swiper-pagination {
+            position: relative;
+
+            .swiper-pagination-bullet {
+              background: $white;
+
+              &:not(:first-child) {
+                margin-left: 8px;
+              }
+            }
+          }
+
+          .swiper-pagination-horizontal {
+            bottom: 10px;
+            left: -18px;
+            width: initial;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 95.4rem;
+
+    .slide-hero {
+      .swiper-slide {
+        &.blue {
+          .main-area {
+            .text {
+              h1 {
+                max-width: 31.9rem;
+                margin: 2.9rem auto .8rem auto;
+              }
+            }
+          }
+        }
+
+        &::after {
+          height: 25rem;
+        }
+
+        .main-area {
+          .area-explore {
+            display: none;
+          }
+
+          .text {
+            .image {
+              margin-top: 8.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    overflow: hidden;
+    height: 104.5rem;
+
+    .slide-hero {
+      .swiper-slide {
+        &.blue {
+          .main-area {
+            .text {
+              h1 {
+                max-width: 23rem;
+              }
+            }
+          }
+        }
+
+        &::after {
+          height: 34rem;
+        }
+
+        .main-area {
+          padding-top: 12rem;
+
+          h1 {
+            font-size: 4.8rem;
+            line-height: 5.9rem;
+          }
+
+          .image {
+            @include centerTotalFlex();
+
+            img {
+              max-width: 72rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 1.6rem;
+    line-height: 4.1rem;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: color .3s, background-color .3s;
+    img {
+        margin-right: 0.8rem;
+    }
+    &-primary {
+        background-color: $primary-default;
+        border-color: $primary-default;
+        &:hover {
+            background-color: $primary-light;
+        }
+    }
+    &-outline {
+        border-color: #ffffff;
+        &:hover {
+            color: $neutral-200;
+            background-color: #ffffff;
+        }
+    }
+}
+
+.game-card{
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  &:hover{
+    .image{
+      img{
+        transform: scale(1.05);
+      }
+    }
+  }
+  .image{
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 2.4rem;
+    display: block;
+    img{
+      transition: transform .3s ease-in;
+    }
+  }
+  .info{
+    h3{
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2.7rem;
+      color: #E5E5E5;
+      margin-top: 4px;
+    }
+    span{
+      font-size: 14px;
+      line-height: 21px;
+      color: rgba(229, 229, 229, .8);
+    }
+  }
+}

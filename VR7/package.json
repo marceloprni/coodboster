@@ -1,0 +1,28 @@
+{
+  "name": "VR7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@types/browser-sync": "^2.29.0",
+    "@types/gulp-autoprefixer": "^0.0.37",
+    "@types/gulp-babel": "^6.1.33",
+    "@types/gulp-concat": "^0.0.37",
+    "@types/gulp-uglify": "^3.0.11",
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.17",
+    "@types/gulp-sass": "^5.0.4",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.92.1"
+  }
+}

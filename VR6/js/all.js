@@ -1,0 +1,1 @@
+console.log("Botão clicado!");var a=12;console.log("modal1 clicado!");
