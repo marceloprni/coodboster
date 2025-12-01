@@ -4,6 +4,14 @@ import Title from "./componentes/Title"
 import UserContext from "./context/UserContext"
 import User from "./componentes/User"
 import Input from "./componentes/Input"
+import TextArea from "./componentes/textArea"
+import SelectOption from "./componentes/SelectOption"
+import RadioButton from "./componentes/RadioButton"
+import CheckBox from "./componentes/CheckBox"
+import newImage from "./assets/image1.jpg"
+
+import './App.css'
+import Car from "./componentes/Car/Car"
 
 
 function App() {
@@ -59,6 +67,12 @@ function App() {
         <User />
         <Input />
       </UserContext.Provider>
+      <TextArea />
+      <SelectOption />
+      <RadioButton />
+      <CheckBox />
+      <img src={newImage} alt="Imagem nova" />
+      <Car value={1000.01} ano={2025} modelo={'Ferrari'}/>
     </div>
   )
 }
