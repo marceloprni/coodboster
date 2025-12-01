@@ -1,0 +1,18 @@
+
+.divPrincipal {
+    height: 200px;
+    width: 400px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Text {
+    font-size: 24px;
+    color: rgb(19, 19, 30);
+}
+
