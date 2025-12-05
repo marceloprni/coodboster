@@ -1,18 +1,24 @@
 import { useEffect, useRef, useState } from "react"
-import Header from "./componentes/Header"
-import Title from "./componentes/Title"
-import UserContext from "./context/UserContext"
-import User from "./componentes/User"
-import Input from "./componentes/Input"
-import TextArea from "./componentes/textArea"
-import SelectOption from "./componentes/SelectOption"
-import RadioButton from "./componentes/RadioButton"
-import CheckBox from "./componentes/CheckBox"
-import newImage from "./assets/image1.jpg"
+//import Header from "./componentes/Header"
+//import Title from "./componentes/Title"
+//import UserContext from "./context/UserContext"
+//import User from "./componentes/User"
+//import Input from "./componentes/Input"
+//import TextArea from "./componentes/TextArea"
+//import SelectOption from "./componentes/SelectOption"
+//import RadioButton from "./componentes/RadioButton"
+//import CheckBox from "./componentes/CheckBox"
+//import newImage from "./assets/image1.jpg"
 
 import './App.css'
-import Car from "./componentes/Car/Car"
+//import Car from "./componentes/Car/Car"
+//import Card from "./componentes/Card/Card"
+//import GlobalStyle from "./context/Global"
 
+import Router from "./Router"
+import Navigation from "./componentes/Navigation"
+
+import { BrowserRouter } from "react-router-dom"
 
 function App() {
   /*
@@ -63,16 +69,25 @@ function App() {
 
   return (
     <div className="App">
-      <UserContext.Provider value={{count, Incrementar}}>
-        <User />
-        <Input />
-      </UserContext.Provider>
+      {/* 
+      <GlobalStyle/>
+        <UserContext.Provider value={{count, Incrementar}}>
+          <User />
+          <Input />
+        </UserContext.Provider>
       <TextArea />
       <SelectOption />
       <RadioButton />
       <CheckBox />
       <img src={newImage} alt="Imagem nova" />
-      <Car value={1000.01} ano={2025} modelo={'Ferrari'}/>
+      <Car value={'1000.01'} ano={2025} modelo={'Ferrari'}/>
+      <Card/>
+      */}
+      <BrowserRouter>
+        <Navigation/>
+        <Router />
+      </BrowserRouter>
+      
     </div>
   )
 }
