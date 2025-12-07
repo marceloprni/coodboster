@@ -3,17 +3,24 @@
 import React from 'react'
 import { ContainerCard } from './styles'
 
-const CardCharacter = () => {
+type CardCharacterProps = {
+    image: string;
+    name: string;
+    genre: string;
+    specie: string;
+}
+
+const CardCharacter = ({image, name, genre, specie}: CardCharacterProps) => {
   return (
     <ContainerCard>
         <div className="image">
-            <img src="" alt="" />
+            <img src={image} alt="" />
         </div>
-        <div className="className">
-            <h3>Rick Sanchez</h3>
+        <div className="info">
+            <h3>{name}</h3>
             <ul>
-                <li>Genero: Male</li>
-                <li>Espécie: Humano</li>
+                <li>Genero: {genre}</li>
+                <li>Espécie: {specie}</li>
             </ul>
         </div>
     </ContainerCard>

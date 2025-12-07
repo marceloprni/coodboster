@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContainerCard = styled.div`
     width: 100%;
-    height: 23.4rem;
     background-color: #151020;
     border-radius: 4px;
     padding: 2rem;
@@ -13,7 +12,36 @@ export const ContainerCard = styled.div`
         border-radius: 4px;
         img {
             width: 100%;
-            
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .info {
+        margin-top: 1.6rem;
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                display: block;
+                font-size: 1.4rem;
+                &:last-child {
+                    &:before{
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        background-color: #ffffff;
+                        opacity: 0.4;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                        margin: 0 0.8rem;
+                    }
+                }
+            }
         }
     }
 `
